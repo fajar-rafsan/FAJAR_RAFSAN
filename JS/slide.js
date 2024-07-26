@@ -13,7 +13,7 @@ next.addEventListener("click", function () {
   } else {
     active += 1;
   }
-  // slider();
+  slider();
 });
 
 prev.addEventListener("click", function () {
@@ -22,7 +22,7 @@ prev.addEventListener("click", function () {
   } else {
     active -= 1;
   }
-  // slider();
+  slider();
 });
 
 let refreshSlider = setInterval(() => {
@@ -48,4 +48,4 @@ function slider() {
 
 // tampilKeranjang();
 
-// slider();
+slider();
