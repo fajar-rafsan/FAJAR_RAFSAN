@@ -1,0 +1,389 @@
+@import url('/CSS/font.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    width: 500%;
+    top: 60px;
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transition: all 1s ease;
+}
+
+.slide::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(1, 1, 3, 1) 3%, rgba(225, 225, 225, 0) 90%);
+    pointer-events: none;
+}
+
+.isiNya {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.isiNya p{
+    font-family: "myFont3";
+}
+
+.isiNya img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 15px solid white;
+    border-radius: 50%;
+    margin: 30px 0;
+}
+
+.isiNya i {
+    position: absolute;
+    top: 50px;
+    left: 49.5%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.isiNya .head1 {
+    font-size: 45px;
+}
+
+.isiNya .head {
+    margin: 10px 0;
+}
+
+.buttons {
+    position: absolute;
+    top: 350px;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.buttons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.265);
+    border: 1px solid white;
+    color: white;
+}
+
+.dots {
+    width: 100%;
+    position: absolute;
+    /* bottom: 50%; */
+    top: 540px;
+    left: 8px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.dots li.active {
+    width: 30px;
+}
+
+.content-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 300%;
+    height: 600px;
+    z-index: 0;
+}
+
+.content-slide::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+
+@media(max-width:760px) {
+    .isiNya i {
+        font-size: 45px;
+    }
+
+    .isiNya img {
+        width: 100px;
+        height: 100px;
+    }
+    .dots{
+        top: 500px;
+    }
+
+    .content-slide {
+        width: 280%;
+        height: 530px;
+    }
+
+    .head.head1 {
+        font-size: 20px;
+    }
+
+    .head.head2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:620px) {
+    #next{
+        width: 35px;
+        height: 35px;
+    }
+    #prev{
+        width: 35px;
+        height: 35px;
+    }
+    .dots{
+        top: 500px;
+    }
+    .head.head1 {
+        font-size: 17px;
+    }
+
+    .head.head2 {
+        font-size: 17px;
+    }
+    .content-slide {
+        width: 200%;
+        height: 530px;
+    }
+}
+
+@media(max-width:510px) {
+    #next{
+        width: 35px;
+        height: 35px;
+        right: 0;
+    }
+    #prev{
+        width: 35px;
+        height: 35px;
+        left: 0;
+    }
+    .isiNya img {
+        width: 85px;
+        height: 85px;
+    }
+    .head.head1 {
+        font-size: 15px;
+    }
+
+    .head.head2 {
+        font-size: 15px;
+    }
+    .content-slide {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .dots{
+        top: 500px;
+    }
+    .dots li{
+        width: 8px;
+        height: 8px;
+    }
+    .dots li.active{
+        width: 25px;
+    }
+    .buttons button{
+        position: absolute;
+        top: -15px;
+    }
+    .isiNya p{
+        font-size: 13px;
+    }
+
+}
+
+@media(max-width:460px) {
+    #next{
+        width: 30px;
+        height: 30px;
+        right: 0;
+    }
+    #prev{
+        width: 30px;
+        height: 30px;
+        left: 0;
+    }
+    .isiNya img {
+        width: 85px;
+        height: 85px;
+    }
+    .head.head1 {
+        font-size: 12px;
+    }
+
+    .head.head2 {
+        font-size: 12px;
+    }
+    .content-slide {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .dots{
+        top: 500px;
+    }
+    .dots li{
+        width: 8px;
+        height: 8px;
+    }
+    .dots li.active{
+        width: 25px;
+    }
+    .buttons button{
+        position: absolute;
+        top: -15px;
+    }
+    .isiNya p{
+        font-size: 13px;
+    }
+}
+
+@media(max-width:380px) {
+    #next{
+        width:27px;
+        height:27px;
+        right: 0;
+    }
+    #prev{
+        width:27px;
+        height:27px;
+        left: 0;
+    }
+    .isiNya img {
+        width: 80px;
+        height: 80px;
+    }
+    .head.head1 {
+        font-size: 10px;
+    }
+
+    .head.head2 {
+        font-size: 10px;
+    }
+    .content-slide {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .dots{
+        top: 500px;
+    }
+    .dots li{
+        width: 7px;
+        height: 7px;
+    }
+    .dots li.active{
+        width: 25px;
+    }
+    .buttons button{
+        position: absolute;
+        top: -15px;
+    }
+    .isiNya p{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:310px) {
+    #next{
+        width:25px;
+        height:25px;
+        right: 0;
+    }
+    #prev{
+        width:25px;
+        height:25px;
+        left: 0;
+    }
+    .isiNya img {
+        width: 75px;
+        height: 75px;
+    }
+    .head.head1 {
+        font-size: 9px;
+    }
+
+    .head.head2 {
+        font-size: 9px;
+    }
+    .content-slide {
+        width: 90%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .dots{
+        top: 500px;
+    }
+    .dots li{
+        width: 6px;
+        height: 6px;
+    }
+    .dots li.active{
+        width: 20px;
+    }
+    .buttons button{
+        position: absolute;
+        top: -15px;
+    }
+    .isiNya p{
+        font-size: 9px;
+    }
+}

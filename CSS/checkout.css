@@ -1,0 +1,612 @@
+@import url('/CSS/font.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(242, 241, 239, 255);
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    /* padding: 30px; */
+}
+
+.logo {
+    width: 150px;
+    height: 90px;
+    object-fit: cover;
+    background-color: #00000086;
+}
+
+#kanan {
+    position: relative;
+    width: 55%;
+    border-right: 1px solid rgb(0, 0, 0, 0.5);
+    padding: 50px;
+}
+
+#field-satu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(177, 185, 204, 255);
+    padding: 10px;
+    max-width: max-content;
+    border-radius: 5px;
+}
+
+legend:nth-child(1) {
+    margin-left: 210px;
+    color: rgba(36, 44, 28, 255)
+}
+
+#field-satu>p {
+    font-family: 'myFont2';
+    font-size: 12px;
+    color: rgba(177, 185, 204, 255);
+}
+
+.logo-bayar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-bayar img {
+    width: 150px;
+    height: 42px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.kembali{
+    cursor: pointer;
+}
+
+.logo-bayar img:nth-child(1) {
+    background-color: #5a31f4;
+    object-fit: cover;
+}
+
+.logo-bayar img:nth-child(3) {
+    background-color: rgba(0, 0, 0, 255);
+    object-fit: cover;
+    padding: 0 40px;
+}
+
+.logo-bayar img:nth-child(2) {
+    background-color: rgba(255, 196, 57, 255);
+    object-fit: contain;
+    padding: 0 20px;
+}
+
+
+#field-dua {
+    margin-top: 20px;
+    padding-top: 20px;
+    /* border-top: 1px solid rgba(177, 185, 204, 255); */
+    border: none;
+    border-top: 1px solid rgba(177, 185, 204, 255);
+}
+
+#field-dua legend {
+    margin-left: 260px;
+}
+
+select {
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+
+}
+
+select option[disabled] {
+    color: #999;
+    font-style: italic;
+}
+
+select option {
+    color: #000;
+}
+
+input {
+    border-radius: 5px;
+    padding: 0 10px;
+    border: none;
+    border: 1px solid rgba(177, 185, 204, 255);
+    outline: none;
+}
+
+form {
+    border: none;
+}
+
+#provinsi {
+    width: 100%;
+}
+
+
+.email {
+    margin-bottom: 50px;
+}
+
+.email h3 {
+    margin-bottom: 20px;
+    font-family: 'myFont5';
+}
+
+.email input {
+    width: 100%;
+    height: 40px;
+}
+
+.alamat h3 {
+    margin-bottom: 20px;
+    font-family: 'myFont5';
+}
+
+.alamat form>* {
+    margin-bottom: 15px;
+}
+
+.alamat form input {
+    height: 40px;
+}
+
+.alamat form>input {
+    width: 100%;
+}
+
+.untuk-nama {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.untuk-nama input {
+    width: 100%;
+}
+
+.kot-prov {
+    display: flex;
+    gap: 15px;
+}
+
+.kot-prov>* {
+    width: 100%;
+}
+
+#kiri {
+    width: 45%;
+    padding: 100px 50px;
+}
+
+.barang-barang {
+    min-width: 100%;
+    max-height: 220px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: auto;
+    gap: 15px;
+}
+
+.barang-barang .bungkus {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+}
+
+.barang-barang .bungkus img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(224, 195, 158);
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.bungkus .bungkus2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid rgb(224, 195, 158);
+}
+
+.bungkus .bungkus2 .nama {
+    font-family: "myFont3";
+}
+
+.bungkus .bungkus2 .harga {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: "myFontNumber";
+}
+
+.bungkus-total {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bungkus-total .teks {
+    font-family: "myFontvos";
+}
+
+.bungkus-total .sub-total {
+    font-family: "myFontvos";
+}
+
+form {
+    position: relative;
+}
+
+button {
+    /* position: absolute;  */
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #000;
+    color: #f1eeee;
+    border-radius: 5px;
+    margin-top: 50px;
+    /* padding: 10px; */
+    /* right: 0;
+    bottom: 0; */
+}
+
+
+.complet {
+    background-color: #562b2b;
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    padding: 20px;
+}
+
+.complet .tanya {
+    border: 1px solid black;
+    padding: 15px;
+    font-family: 'myFont4';
+    font-size: 20px;
+}
+
+.complet>p {
+    font-family: "myFont3";
+    margin-top: 10px;
+}
+
+.complet.active {
+    display: block;
+    /* position: fixed; */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black */
+    z-index: 5;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+
+@media(max-width:1100px) {
+    main {
+        position: relative;
+        width: 100vw;
+        display: block;
+    }
+
+    #kanan {
+        position: relative;
+        width: 100%;
+    }
+    #kiri {
+        width: 100%;
+        padding: 50px 50px;
+    }
+
+    .logo-bayar img {
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .logo-bayar img:nth-child(2) {
+        width: 30%;
+        object-fit: contain;
+        padding: 0;
+    }
+
+    .logo-bayar img:nth-child(3) {
+        width: 30%;
+        object-fit: contain;
+        padding: 0;
+    }
+    #field-dua legend {
+        margin-left: 50%;
+    }
+
+    #field-satu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid rgba(177, 185, 204, 255);
+        padding: 10px;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .logo-bayar img {
+        width: 25%;
+    }
+    .complet {
+        width: 50%;
+        height: 50%;
+    }
+    
+
+}
+
+@media(max-width:800px){
+    #kiri {
+        width: 100%;
+        padding: 10px 50px;
+    }
+    .buttonNya{
+        width: 100px;
+        height: 50px;
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+    }
+}
+
+
+@media(max-width:600px) {
+    main {
+        position: relative;
+        width: 100vw;
+        display: block;
+    }
+
+    #kanan {
+        position: relative;
+        width: 100%;
+    }
+    #kiri {
+        width: 100%;
+        padding: 10px 50px;
+    }
+
+    legend:nth-child(1) {
+        margin-left: 43%;
+        color: rgba(36, 44, 28, 255)
+    }
+
+    #field-dua legend {
+        margin-left: 50%;
+    }
+
+    #field-satu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid rgba(177, 185, 204, 255);
+        padding: 10px;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .logo-bayar img {
+        width: 30%;
+        gap: 5px;
+    }
+
+    .complet {
+
+        width: 50%;
+        height: 50%;
+    
+    }
+    
+    .complet .tanya {
+        width: 100%;
+        height: 30%;
+        padding: 5px;
+    }
+    
+    .complet>p {
+      font-size: 10px;
+      margin-top: 0;
+    }
+   
+    
+}
+
+
+
+@media(max-width:520px) {
+    main {
+        position: relative;
+        width: 100vw;
+        display: block;
+    }
+
+    #kanan {
+        position: relative;
+        width: 100%;
+    }
+
+    legend:nth-child(1) {
+        margin-left: 38%;
+        color: rgba(36, 44, 28, 255)
+    }
+
+    #field-dua legend {
+        margin-left: 50%;
+    }
+
+    #field-satu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid rgba(177, 185, 204, 255);
+        padding: 10px;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .logo-bayar img {
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .logo-bayar img:nth-child(2) {
+        width: 30%;
+        object-fit: contain;
+        padding: 0;
+    }
+
+    .logo-bayar img:nth-child(3) {
+        width: 30%;
+        object-fit: contain;
+        padding: 0;
+    }
+    .buttonNya{
+        width: 100px;
+        height: 50px;
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+}
+
+
+
+@media(max-width:520px){
+    .complet {
+
+        width: 50%;
+        height: 50%;
+    
+    }
+    
+    .complet .tanya {
+        width: 100%;
+        height: 25%;
+        padding: 5px;
+    }
+    
+    .complet p {
+      font-size: 13px;
+      margin-top: 0;
+    }
+}
+@media(max-width:370px) {
+    legend:nth-child(1) {
+        margin-left: 30%;
+        color: rgba(36, 44, 28, 255)
+    }
+    .buttonNya{
+        width: 90px;
+        height: 40px;
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+}
+
+@media(max-width:330px) {
+    main {
+        position: relative;
+        width: 100vw;
+        display: block;
+    }
+
+    #kanan {
+        position: relative;
+        width: 100%;
+    }
+
+    legend:nth-child(1) {
+        margin-left: 25%;
+        color: rgba(36, 44, 28, 255)
+    }
+
+    #field-dua legend {
+        margin-left: 50%;
+    }
+
+    #field-satu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid rgba(177, 185, 204, 255);
+        padding: 10px;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .logo-bayar img {
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .logo-bayar img:nth-child(2) {
+        width: 30%;
+        object-fit: contain;
+        padding: 0;
+    }
+
+    .logo-bayar img:nth-child(3) {
+        width: 30%;
+        object-fit: contain;
+        padding: 0;
+    }
+    #kiri {
+        width: 100%;
+        padding: 0 10px;
+    }
+    button {
+        /* position: absolute;  */
+        width: 100px;
+        height: 35px;
+        padding: 5px 5px;
+        margin-top: 5px;
+    }
+    .buttonNya{
+        width: 90px;
+        height: 40px;
+        font-size: 10px;
+        position: absolute;
+        top: 70%;
+        left: 25%;
+    }
+}

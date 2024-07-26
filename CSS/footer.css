@@ -1,0 +1,829 @@
+@font-face {
+    font-family: 'myFont';
+    src: url('/media/Space_Grotesk/static/SpaceGrotesk-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'myFont2';
+    src: url('/media/Encode-Sans-Regular/encodesans/EncodeSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'myFont3';
+    src: url('/media/FontsFree-Net-Trend-Sans-W00-One.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    background-color: rgb(111, 78, 55);
+    font-family: 'myFont';
+    /* z-index: -1; */
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.contact h1 {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 15px;
+}
+
+.contact hr {
+    background-color: white;
+    width: 80px;
+    height: 12px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+}
+
+.footer-2 {
+    position: relative;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    height: 250px;
+    justify-content: center;
+    font-family: 'myFont2';
+}
+
+.footer-2 .copy {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 10px;
+}
+
+.linkNya {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    /* position: relative; */
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid rgb(111, 78, 55);
+    width: 250px;
+    height: 120px;
+}
+
+
+.linkNya i {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: rgb(111, 78, 55);
+}
+
+.linkNya .webNya {
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.linkNya>p {
+    color: white;
+}
+
+.linkNya .hoverNya {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.linkNya .hoverNya:hover {
+    text-decoration-line: underline;
+    color: blue;
+}
+
+.linkNya .hoverNya:active {
+    text-decoration-line: underline;
+    color: blue;
+    color: white;
+}
+
+
+.footer-3 {
+    /* position: relative; */
+    font-size: small;
+    background-color: rgba(36, 36, 36, 255);
+    color: white;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:1030px) {
+    .contact h1 {
+        font-size: 30px;
+    }
+
+    .contact p {
+        font-size: 15px;
+    }
+
+    .contact hr {
+        width: 70px;
+        height: 10px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-2 {
+        padding: 40px 0;
+        height: 200px;
+        /* padding: 0 10px; */
+    }
+
+    .contact-item {
+        display: flex;
+        max-width: 230px;
+        height: 120px;
+
+    }
+
+    .linkNya i {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: rgb(111, 78, 55);
+    }
+
+    .linkNya .hoverNya {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+
+    .linkNya {
+        width: 50%;
+        height: 100px;
+    }
+
+    .linkNya .webNya {
+        font-size: 10px;
+    }
+
+}
+
+@media(max-width:1030px) {
+    .contact h1 {
+        font-size: 30px;
+    }
+
+    .contact p {
+        font-size: 15px;
+    }
+
+    .contact hr {
+        width: 70px;
+        height: 10px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-2 {
+        padding: 40px 0;
+        height: 200px;
+        /* padding: 0 10px; */
+    }
+
+    .contact-item {
+        display: flex;
+        max-width: 200px;
+        height: 120px;
+
+    }
+
+    .linkNya i {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: rgb(111, 78, 55);
+    }
+
+    .linkNya .hoverNya {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+
+    .linkNya {
+        width: 50%;
+        height: 100px;
+    }
+
+    .linkNya .webNya {
+        font-size: 10px;
+    }
+
+}
+
+
+
+@media(max-width: 834px) {
+    .contact h1 {
+        font-size: 30px;
+    }
+
+    .contact p {
+        font-size: 15px;
+    }
+
+    .contact hr {
+        width: 70px;
+        height: 10px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-2 {
+        padding: 40px 0;
+        height: 200px;
+        /* padding: 0 10px; */
+    }
+
+    .contact-item {
+        display: flex;
+        width: 170px;
+        height: 110px;
+
+    }
+
+    .linkNya i {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: rgb(111, 78, 55);
+    }
+
+    .linkNya .hoverNya {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+
+    .linkNya {
+        width: 90%;
+        height: 100px;
+
+    }
+
+    .linkNya .webNya {
+        font-size: 10px;
+    }
+
+
+    @media(max-width: 820px) {
+        .contact h1 {
+            font-size: 30px;
+        }
+
+        .contact p {
+            font-size: 15px;
+        }
+
+        .contact hr {
+            width: 70px;
+            height: 10px;
+        }
+
+        footer {
+            height: 150px;
+        }
+
+        .footer-2 {
+            padding: 40px 0;
+            height: 200px;
+            /* padding: 0 10px; */
+        }
+
+        .contact-item {
+            display: flex;
+            width: 170px;
+            height: 110px;
+
+        }
+
+        .linkNya i {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: rgb(111, 78, 55);
+        }
+
+        .linkNya .hoverNya {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-top: 10px;
+        }
+
+        .linkNya {
+            width: 90%;
+            height: 100px;
+
+            /* position: relative; */
+        }
+
+        .linkNya .webNya {
+            font-size: 10px;
+        }
+    }
+
+    @media(max-width: 800px) {
+        .contact h1 {
+            font-size: 30px;
+        }
+
+        .contact p {
+            font-size: 15px;
+        }
+
+
+        .contact hr {
+            width: 70px;
+            height: 10px;
+        }
+
+        footer {
+            height: 150px;
+        }
+
+        .footer-2 {
+            padding: 40px 0;
+            height: 200px;
+            /* padding: 0 10px; */
+        }
+
+        .contact-item {
+            display: flex;
+            width: 170px;
+            height: 110px;
+        }
+
+        .linkNya i {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: rgb(111, 78, 55);
+        }
+
+        .linkNya .hoverNya {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-top: 10px;
+        }
+
+        .linkNya {
+            width: 90%;
+            height: 100px;
+
+            /* position: relative; */
+        }
+
+        .linkNya .webNya {
+            font-size: 10px;
+        }
+    }
+
+    @media(max-width: 740px) {
+        .contact h1 {
+            font-size: 30px;
+        }
+
+        .contact p {
+            font-size: 15px;
+        }
+
+
+        .contact hr {
+            width: 70px;
+            height: 10px;
+        }
+
+        footer {
+            height: 150px;
+        }
+
+        .footer-2 {
+            padding: 40px 0;
+            height: 200px;
+            /* padding: 0 10px; */
+        }
+
+        .contact-item {
+            display: flex;
+            width: 150px;
+            height: 110px;
+        }
+
+        .linkNya i {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: rgb(111, 78, 55);
+        }
+
+        .linkNya .hoverNya {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-top: 10px;
+        }
+
+        .linkNya {
+            width: 90%;
+            height: 100px;
+
+            /* position: relative; */
+        }
+
+        .linkNya .webNya {
+            font-size: 10px;
+        }
+    }
+
+    @media(max-width: 650px) {
+        .contact h1 {
+            font-size: 30px;
+        }
+
+        .contact p {
+            font-size: 15px;
+        }
+
+
+        .contact hr {
+            width: 70px;
+            height: 10px;
+        }
+
+        footer {
+            height: 150px;
+        }
+
+        .footer-2 {
+            padding: 40px 0;
+            height: 200px;
+            /* padding: 0 10px; */
+        }
+
+        .contact-item {
+            display: flex;
+            width: 140px;
+            height: 110px;
+        }
+
+        .linkNya i {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: rgb(111, 78, 55);
+        }
+
+        .linkNya .hoverNya {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-top: 10px;
+        }
+
+        .linkNya {
+            width: 90%;
+            height: 100px;
+
+            /* position: relative; */
+        }
+
+        .linkNya .webNya {
+            font-size: 10px;
+        }
+    }
+
+    @media(max-width: 650px) {
+        .contact h1 {
+            font-size: 30px;
+        }
+
+        .contact p {
+            font-size: 15px;
+        }
+
+
+        .contact hr {
+            width: 70px;
+            height: 10px;
+        }
+
+        footer {
+            height: 150px;
+        }
+
+        .footer-2 {
+            padding: 40px 0;
+            height: 200px;
+            /* padding: 0 10px; */
+        }
+
+        .contact-item {
+            display: flex;
+            width: 130px;
+            height: 110px;
+        }
+
+        .linkNya i {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: rgb(111, 78, 55);
+        }
+
+        .linkNya .hoverNya {
+            display: inline-block;
+            font-size: 8px;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-top: 10px;
+        }
+
+        .linkNya {
+            width: 90%;
+            height: 100px;
+
+            /* position: relative; */
+        }
+
+        .linkNya .webNya {
+            font-size: 10px;
+        }
+    }
+}
+
+
+@media(max-width: 550px) {
+    .contact h1 {
+        font-size: 30px;
+    }
+
+    .contact p {
+        font-size: 15px;
+    }
+
+
+    .contact hr {
+        width: 70px;
+        height: 10px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-2 {
+        padding: 40px 30px;
+        height: 200px;
+        /* padding: 0 10px; */
+    }
+
+    .contact-item {
+        display: flex;
+        width: 120px;
+        height: 100px;
+    }
+
+    .linkNya i {
+        font-size: 25px;
+        margin-bottom: 10px;
+        color: rgb(111, 78, 55);
+    }
+
+    .linkNya .hoverNya {
+        display: inline-block;
+        font-size: 8px;
+        font-weight: 600;
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+
+    .linkNya {
+        width: 90%;
+        height: 100px;
+
+        /* position: relative; */
+    }
+
+    .linkNya .webNya {
+        font-size: 10px;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .contact h1 {
+        font-size: 30px;
+    }
+
+    .contact p {
+        font-size: 15px;
+    }
+
+
+    .contact hr {
+        width: 70px;
+        height: 10px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-2 {
+        padding: 40px 30px;
+        height: 200px;
+        /* padding: 0 10px; */
+    }
+
+    .contact-item {
+        display: flex;
+        width: 100px;
+        height: 90px;
+    }
+
+    .linkNya i {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: rgb(111, 78, 55);
+    }
+
+    .linkNya .hoverNya {
+        display: inline-block;
+        font-size: 6px;
+        font-weight: 600;
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+
+    .linkNya {
+        width: 90%;
+        height: 100px;
+
+        /* position: relative; */
+    }
+
+    .linkNya .webNya {
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 430px) {
+    .contact h1 {
+        font-size: 30px;
+    }
+
+    .contact p {
+        font-size: 15px;
+    }
+
+
+    .contact hr {
+        width: 70px;
+        height: 10px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-2 {
+        padding: 40px 30px;
+        height: 200px;
+        /* padding: 0 10px; */
+    }
+
+    .contact-item {
+        display: flex;
+        width: 90px;
+        height: 70px;
+    }
+
+    .linkNya i {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: rgb(111, 78, 55);
+    }
+
+    .linkNya .hoverNya {
+        display: inline-block;
+        font-size: 6px;
+        font-weight: 600;
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+
+    .linkNya {
+        width: 90%;
+        height: 100px;
+
+        /* position: relative; */
+    }
+
+    .linkNya .webNya {
+        font-size: 8px;
+    }
+}
+
+
+@media(max-width: 430px) {
+    .contact h1 {
+        font-size: 30px;
+    }
+
+    .contact p {
+        font-size: 15px;
+    }
+
+
+    .contact hr {
+        width: 70px;
+        height: 10px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-2 {
+        padding: 40px 10px;
+        height: 200px;
+        /* padding: 0 10px; */
+    }
+
+    .contact-item {
+        display: flex;
+        width: 70px;
+        height: 60px;
+    }
+
+    .linkNya i {
+        font-size: 15px;
+        margin-bottom: 10px;
+        color: rgb(111, 78, 55);
+    }
+
+    .linkNya .hoverNya {
+        display: inline-block;
+        font-size: 5px;
+        font-weight: 600;
+        white-space: nowrap;
+        margin-top: 10px;
+    }
+
+    .linkNya {
+        width: 90%;
+        height: 100px;
+
+        /* position: relative; */
+    }
+
+    .linkNya .webNya {
+        font-size: 6px;
+    }
+}

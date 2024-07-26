@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="/CSS/checkout.css">
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="complet">
+        <div class="tanya">
+            <p>Apakah alamat pengirimnya benar ? </p>
+        </div>
+
+    </div>
+
+    <main>
+        <aside id="kanan">
+            <a class="kembali" href="/HTML/index.html">
+                <img class="logo" src="/media/Logo_Pojok_Temu_Transparent.png" alt="">
+            </a>
+
+            <fieldset id="field-satu">
+                <legend>Express checkout</legend>
+                <div class="logo-bayar">
+                    <img src="/media/shopee.png" alt="shopee">
+                    <img src="/media/paypal.png" alt="google">
+                    <img src="/media/google.png" alt="paypal">
+                </div>
+                <p>One or more of the items in your cart is a recurring or deferred purchase. By continuing, I agree to
+                    the cancellation policy and authorize you to charge my payment method at the prices, frequency and
+                    dates listed on this page until my order is fulfilled or I cancel, if permitted.</p>
+            </fieldset>
+            <fieldset id="field-dua">
+                <legend>OR</legend>
+                <div class="email">
+                    <h3>kontak</h3>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="alamat">
+                    <h3>ALAMAT PENGIRIMAN</h3>
+                    <form id="from" action="">
+                        <select id="kota" name="fruits">
+                            <option value="" disabled selected>Pilih opsi...</option>
+                            <option value="medan">medan</option>
+                            <option value="sibolga">sibolga</option>
+                            <option value="korea selatan">bandung</option>
+                        </select>
+                        <div class="untuk-nama">
+                            <input type="username" id="name-depan" placeholder="Nama depan">
+                            <input type="username" id="nama-belakang" placeholder="Nama belakang">
+                        </div>
+                        <input type="text" placeholder="apartemen(opsional)">
+                        <div class="kot-prov">
+                            <input type="text" placeholder="alamat" id="alamat">
+                            <select name="provinsi" id="provinsi">
+                                <option value="">sumatera utara</option>
+                                <option value="">jawa barat</option>
+                                <option value="">sumatera barat</option>
+                            </select>
+                            <input type="text" placeholder="Kode pos" pattern="\d{5}">
+                        </div>
+                        <input type="tel" id="phone" name="phone" placeholder="Telepon (opsional)"
+                            pattern="\+?\d{1,4}?[-.\s]?(?:\d{1,4}[-.\s]?){1,3}\d{1,9}">
+                    </form>
+                    <button class="end">Lanjut Pengiriman</button>
+                </div>
+            </fieldset>
+        </aside>
+        <aside id="kiri">
+            <div class="barang-barang">
+
+            </div>
+        </aside>
+    </main>
+    <script src="/JS/transaksi.js"></script>
+</body>
+
+</html>

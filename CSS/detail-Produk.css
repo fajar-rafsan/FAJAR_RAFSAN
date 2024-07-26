@@ -1,0 +1,214 @@
+@import url('/CSS/font.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    min-width: 100vw;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 255);
+    color: white;
+}
+/* ===== UNTUK CLASS PRODUKNYA ========*/
+/* main{
+    position: relative;
+    
+    max-height: max-content;
+    top: 60px;
+    margin-bottom: 120px;
+} */
+/* .main-produkNya {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        top: 60px;
+        display: flex;
+    } */
+
+.bar-page {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 350px;
+    background-color: rgb(111, 78, 55);
+    font-family: "myFontRaleway";
+    margin-bottom: 30px;
+}
+
+.bar-page h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    font-family: "myFontRaleway";
+}
+
+.bar-page .bar-link a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'myFont4';
+}
+
+.detail-produk {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 0 50px;
+    background-color: #2b2a2b;
+}
+
+.detail-produk .fotoProduk {
+    width: 500px;
+    height: 500px;
+    filter: drop-shadow(-5px 5px 5px rgba(255, 255, 255, 0.5)) drop-shadow(-15px 10px 15px rgba(70, 50, 50, 0.9));
+    /* border: 1px solid white; */
+}
+
+.detail-produk .aside-produk {
+    /* position: relative;*/
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 80px 50px 50px;
+}
+
+.detail-produk .aside-produk .nama-produk {
+    font-size: 40px;
+    font-family: 'myFontVos';
+    margin-bottom: 25px;
+}
+
+
+.detail-produk .aside-produk .price-produk {
+    font-size: 20px;
+    font-family: 'myFontNumber';
+    margin-bottom: 30px;
+}
+
+.detail-produk .aside-produk .des-produk {
+    font-family: 'myFont5';
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.detail-produk .aside-produk .reg {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.detail-produk .aside-produk .reg .weight-produk {
+    font-size: 15px;
+    word-spacing: 10px;
+}
+
+.detail-produk .aside-produk .reg .region-produk {
+    font-size: 15px;
+    word-spacing: 10px;
+}
+
+.detail-produk .aside-produk .con-entah {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-produk .aside-produk .con-entah button {
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.detail-produk .aside-produk .con-entah .tamkur {
+    width: 150px;
+    height: 40px;
+    border: 1px solid rgb(8, 8, 8);
+    background-color: white;
+    color: black;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.detail-produk .aside-produk .con-entah .tamkur span {
+    width: 100%;
+    text-align: center;
+}
+
+.detail-produk .aside-produk .con-entah .tamkur .angka {
+    border-right: 2px solid rgba(6, 5, 5, 0.2);
+    border-left: 2px solid rgba(10, 9, 9, 0.2);
+    font-size: 20px;
+}
+
+.detail-produk .aside-produk .con-entah .tamkur .minus {
+    font-size: large;
+}
+
+.detail-produk .aside-produk .con-entah .tamkur .tambah {
+    font-size: 20px;
+}
+
+.detail-produk .aside-produk .con-entah button:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.detail-produk .aside-produk .con-entah button:active {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.detail-produk .aside-produk .con-option {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    
+}
+
+.parag {
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 20rem;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 15px rgba(49, 48, 48, 0.5) inset,
+    -10px -10px 15px rgba(49, 48, 48, 0.5) inset;
+    font-family: "myFont5";
+}
+
+#active {
+    background-color: rgb(250, 247, 247);
+    color: rgb(7, 247, 2);
+    color: #2b2a2b;
+
+}
+
+/* .detail-produk .aside-produk .con-option p :hover{
+
+} */
+
+
+
+/* =========================== */

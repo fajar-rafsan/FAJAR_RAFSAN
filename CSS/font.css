@@ -1,0 +1,48 @@
+/*//============= UNTUK FONT ====================//*/
+@font-face {
+    font-family: 'myFont';
+    src: url('/media/Space_Grotesk/static/SpaceGrotesk-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'myFont2';
+    src: url('/media/Encode-Sans-Regular/encodesans/EncodeSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'myFont3';
+    src: url('/media/FontsFree-Net-Trend-Sans-W00-One.ttf');
+}
+
+@font-face {
+    font-family: 'myFont4';
+    src: url('/media/PT_Sans/PTSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'myFont5';
+    src: url('/media/PT_Sans/PTSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'myFontMarcellus';
+    src: url('/media/Marcellus/Marcellus-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'myFontRaleway';
+    src: url('/media/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'myFontNumber';
+    src: url('/media/Numbers-Strasse_FontYukle/Numbers-Strasse.ttf');
+}
+
+@font-face {
+    font-family: 'myFontVos';
+    src: url('/media/Vastago/Vastago\ Grotesk\ Bold.otf');
+}
+
+/*====================================================*/

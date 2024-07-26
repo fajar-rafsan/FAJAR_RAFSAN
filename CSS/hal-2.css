@@ -1,0 +1,741 @@
+@import url('/CSS/font.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    min-width: 100vw;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 255);
+    color: white;
+}
+
+.section {
+    position: relative;
+    height: 550px;
+    background-color: rgb(21, 19, 19);
+}
+
+.section .content {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* overflow-x: hidden; */
+    /* padding: 30px 0 10px; */
+}
+
+.content .teks {
+    height: 100%;
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'myFont';
+    font-weight: 600;
+    text-align: center;
+}
+
+.content .teks h1 {
+    inset: 15px;
+    background-color: rgb(21, 19, 19);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.content .teks span {
+    /* width: 400px;
+    height: 100px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 19, 19);
+    padding: 4px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.content .teks span::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-image: conic-gradient(transparent, transparent,transparent, rgb(132, 56, 2));
+    z-index: -1;
+    animation: rotasi 4s linear infinite;
+}
+.content .teks span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-image: conic-gradient(transparent, transparent, transparent,rgb(255, 255, 255));
+    z-index: -1;
+    animation: rotasi 4s linear infinite;
+    animation-delay: -2s;
+}
+
+@keyframes rotasi {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ww1 {
+    position: relative;
+    top: 0;
+    left: 60px;
+    width: 300px;
+    height: 100%;
+}
+
+.ww1 .img {
+    position: absolute;
+}
+
+.ww1 .wb1 {
+    width: 250px;
+    height: 450px;
+
+}
+
+.ww1 .wh1 {
+    top: 20px;
+    left: 40px;
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(-5px 15px 10px rgba(225, 225, 225, .3)) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+    animation: animasiNya1 5s ease-in-out infinite;
+}
+
+.ww1 .wh2 {
+    bottom: 20px;
+    left: 40px;
+    width:  200px;
+    height:  200px;
+    animation: animasiNya2 5s ease-in-out infinite;
+    filter: drop-shadow(5px 10px 10px rgba(225, 225, 225, .3));
+}
+
+@keyframes animasiNya1 {
+    0% {
+        top: 20px;
+    }
+
+    50% {
+        top: 50px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+@keyframes animasiNya2 {
+    0% {
+        bottom: 20px;
+    }
+
+    50% {
+        bottom: 50px;
+    }
+
+    100% {
+        bottom: 20px;
+    }
+}
+
+
+.ww2 {
+    position: relative;
+    top: 0;
+    right: -660px;
+    width: 300px;
+    height: 100%;
+    /* padding: 15px; */
+}
+
+.ww2 .img {
+    position: absolute;
+}
+
+.ww2 .wb2 {
+    /* top: 0; */
+    width: 250px;
+    height: 450px;
+}
+
+.ww2 .wh3 {
+    top: 10px;
+    left: 60px;
+    width:  200px;
+    height:  200px;
+    animation: animasiNya3 5s ease-in-out infinite;
+    filter: drop-shadow(10px 10px 10px rgba(225, 225, 225, .3)) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.ww2 .wh4 {
+    bottom: 40px;
+    left: 50px;
+    width:  200px;
+    height: 200px;
+    animation: animasiNya4 5s ease-in-out infinite;
+    filter: drop-shadow(10px -5px 10px rgba(225, 225, 225, .3)) drop-shadow(15px -10px 10px rgba(0, 0, 0, 0.3));
+
+}
+
+@keyframes animasiNya3 {
+    0% {
+        top: 10px;
+    }
+
+    50% {
+        top: 40px;
+    }
+
+    100% {
+        top: 10px;
+    }
+}
+
+@keyframes animasiNya4 {
+    0% {
+        bottom: 40px;
+    }
+
+    50% {
+        bottom: 70px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}
+
+/* // ====================== untuk DIV main produk ===============// */
+.main-Produk {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    /* margin-bottom: 50px; */
+    margin-top: 200px;
+}
+
+.main-Produk .headH1 {
+    font-family: 'myFont3';
+    margin-bottom: 50px;
+}
+
+.button {
+    position: absolute;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+    /* border: 1px solid white; */
+    color: rgb(221, 93, 13);
+}
+
+#prev {
+    left: 0;
+    top: 50%;
+}
+
+#next {
+    right: 0;
+    top: 50%;
+}
+
+#next::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(232, 218, 218);
+    right: 0;
+    top: 50%;
+    transform: translate(-20%, -60%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#prev::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(232, 218, 218);
+    left: 0;
+    top: 50%;
+    transform: translate(-80%, -60%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.content-Produk {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    width: 850px;
+    height: 500px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    /* --scroll-amount: 450px; */
+}
+.content-Produk .produk {
+    position: relative;
+    display: block;
+    left: 0;
+    min-width: 400px;
+    width: 100%;
+    height: 400px;
+    overflow-y: hidden;
+    box-shadow: 10px 10px 15px rgba(49, 48, 48, 0.5) inset,
+        -10px -10px 15px rgba(49, 48, 48, 0.5) inset;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.content-Produk .produk::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/media/art-3561710_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    border-radius: 20px;
+    z-index: -1;
+    transition: opacity ease .5s;
+}
+
+.content-Produk .produk .img-Produk {
+    position: relative;
+    border: none;
+    outline: none;
+    transition: transform .5s;
+    width: 400px;
+    height: 400px;
+
+}
+
+.content-Produk .produk .deskripsi {
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    font-family: 'myFont3';
+    font-size: 10px;
+    background-color: rgba(31, 10, 2, 0.911);
+    border-radius: 2rem;
+    padding: 15px 12px;
+    opacity: 0;
+    transition: opacity .5s .5s;
+    box-shadow: 10px 10px 15px rgba(49, 48, 48, 0.5) inset,
+        -10px -10px 15px rgba(49, 48, 48, 0.5) inset;
+}
+
+.content-Produk .produk .deskripsi p {
+    font-family: 'myFont2';
+    font-size: 13px;
+}
+
+.content-Produk .produk .deskripsi>* {
+    margin-bottom: 15px;
+}
+
+.content-Produk .produk .deskripsi .price {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'myFontNumber';
+}
+
+.content-Produk .produk .deskripsi button {
+    cursor: pointer;
+    padding: 10px 25px;
+    border: none;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: transparent;
+    color: rgb(232, 231, 201);
+    outline: 1px solid rgb(117, 35, 0);
+    font-family: 'myFont4';
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.9);
+    transition: background-color 1s;
+}
+
+.content-Produk .produk .deskripsi button::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(142, 33, 2);
+    border-radius: 10px 0 0 10px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    cursor: pointer;
+    transition: background-color 1s ease;
+
+}
+
+.content-Produk .produk .deskripsi button::after {
+    content: 'Detail';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -21px;
+    text-align: center;
+    transform: translateY(30%);
+    color: inherit;
+    padding: 15px 0 0 0;
+
+}
+
+.content-Produk .produk .deskripsi button:hover {
+    background-color: rgb(142, 33, 2);
+    transition: background-color .5s ease;
+}
+
+
+.content-Produk .produk .deskripsi button:active::before,
+.content-Produk .produk .deskripsi button:active {
+    background-color: transparent;
+    transition: background-color .2s ease;
+    color: rgb(142, 33, 2);
+}
+
+.content-Produk .produk:hover .deskripsi {
+    animation: hoveran 1s ease forwards;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.content-Produk .produk:hover {
+    animation: hoveran2 2s ease forwards;
+}
+
+.content-Produk .produk:hover::before {
+    opacity: 1;
+}
+
+.content-Produk .produk:hover .img-Produk {
+    transform: translateY(-10%) scale(.8);
+
+}
+
+
+.content-Produk .produk:not(:hover) .deskripsi {
+    animation: kembali 1s ease forwards;
+
+}
+
+.content-Produk .produk:not(:hover) {
+    animation: kembali2 2s ease forwards;
+}
+
+
+@keyframes hoveran {
+    0% {
+        bottom: -50%;
+    }
+
+    50% {
+        bottom: 10%;
+    }
+
+    100% {
+        bottom: -10%;
+    }
+}
+
+@keyframes hoveran2 {
+
+    to {
+        overflow: initial;
+    }
+}
+
+
+
+@keyframes kembali {
+    0% {
+        bottom: -10%;
+    }
+
+    50% {
+        bottom: 10%;
+    }
+
+    100% {
+        bottom: -50%;
+        /* opacity: 1; */
+    }
+}
+
+@keyframes kembali2 {
+    0% {
+        overflow: initial;
+    }
+
+    50% {
+        overflow: hidden;
+    }
+}
+
+/* // ===========================================// */
+
+
+/* // ============== untuk DIV WHAT ============== //*/
+.what {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+.what>* {
+    margin-bottom: 30px;
+}
+
+.what>h1 {
+    font-family: 'myFontMarcellus';
+    font-size: 50px;
+    color: rgba(190, 156, 121, 255);
+}
+
+.what>P {
+    font-family: 'myFontRaleway';
+}
+
+.what hr {
+    margin: 80px auto;
+    width: 70px;
+    height: 1px;
+    transform: rotate(90deg);
+}
+
+/* // ========================================== //*/
+
+
+/* //============== untuk view 1 ==============//*/
+
+.what .view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 100px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.what .view .imgView .bungkusImg {
+    width: max-content;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.what .view .imgView .bungkusImg img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.what .view .imgView img:hover {
+    transform: scale(1.1);
+}
+
+.what .view .imgView {
+    display: inline-block;
+    width: min-content;
+    position: relative;
+    left: 50px;
+
+}
+
+.what .view .imgView figcaption {
+    display: inline-block;
+    height: min-content;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -80px;
+    top: 60px;
+    font-family: 'myFontRaleway';
+
+}
+
+.what .view .imgView figcaption::before {
+    content: '';
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: aliceblue;
+}
+
+
+
+.what .view .teks h1 {
+    font-family: 'myFontMarcellus';
+    font-size: 50px;
+    color: rgba(190, 156, 121, 255);
+}
+
+.what .view .teks button {
+    padding: 20px 30px;
+    border: none;
+    background-color: rgba(190, 156, 121, 255);
+    font-size: large;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    margin-top: 20px;
+}
+
+.what .view .teks button:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+/* // ================================== // */
+
+/* //============== untuk view 2 ==============//*/
+
+.what .view2 .imgView .bungkusImg {
+    width: max-content;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.what .view2 .imgView .bungkusImg img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.what .view2 .imgView .bungkusImg img:hover {
+    transform: scale(1.1);
+}
+
+.what .view2 .imgView {
+    position: relative;
+    display: inline-block;
+    width: min-content;
+    right: 50px;
+
+}
+
+.what .view2 .imgView figcaption {
+    display: inline-block;
+    height: min-content;
+    transform: rotate(90deg);
+    position: absolute;
+    right: -80px;
+    top: 60px;
+    font-family: 'myFontRaleway';
+
+}
+
+.what .view2 .imgView figcaption::before {
+    content: '';
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: aliceblue;
+}
+
+.what .view2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.what .view2 .teks h1 {
+    font-family: 'myFontMarcellus';
+    font-size: 50px;
+    color: rgba(190, 156, 121, 255);
+}
+
+.what .view2 .teks button {
+    padding: 20px 30px;
+    border: none;
+    background-color: rgba(190, 156, 121, 255);
+    font-size: large;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    margin-top: 20px;
+}
+
+.what .view2 .teks button:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+/* // ================================== // */
+
+
+@media(max-width: 1080px){
+    .section {
+        position: relative;
+        width: 100%;
+        top: 60px;
+        height: 550px;
+        background-color: rgb(21, 19, 19);
+    }
+    
+    .section .content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        /* padding: 30px 0 10px; */
+    }
+
+}
