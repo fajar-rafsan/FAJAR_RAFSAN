@@ -14,6 +14,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
 function hal() {
   if (document.body.id === "halaman1") {
     let nav = document.querySelector(".link:nth-child(1)");
