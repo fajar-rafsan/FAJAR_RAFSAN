@@ -1,84 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>checkout</title>
+    <title>Checkout - Golden Treasure</title>
     <link rel="stylesheet" href="/CSS/checkout.css">
+    <link rel="stylesheet" href="/CSS/gold-theme.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 
 <body>
     <div class="overlay" id="overlay"></div>
     <div class="complet">
         <div class="tanya">
-            <p>Apakah alamat pengirimnya benar ? </p>
+            <p>Apakah data pembelian dan alamat pengiriman sudah benar?</p>
+            <div class="confirmation-buttons">
+                <button class="btn-confirm">Ya, Benar</button>
+                <button class="btn-cancel">Periksa Kembali</button>
+            </div>
         </div>
-
     </div>
 
     <main>
         <aside id="kanan">
             <a class="kembali" href="/HTML/index.html">
-                <img class="logo" src="/media/Logo_Pojok_Temu_Transparent.png" alt="">
+                <img class="logo" src="/media/golden-treasure-logo.png" alt="Golden Treasure">
+                <span>Kembali ke Beranda</span>
             </a>
 
             <fieldset id="field-satu">
-                <legend>Express checkout</legend>
+                <legend>Pembayaran Express</legend>
                 <div class="logo-bayar">
-                    <img src="/media/shopee.png" alt="shopee">
-                    <img src="/media/paypal.png" alt="google">
-                    <img src="/media/google.png" alt="paypal">
+                    <img src="/media/gopay.png" alt="GoPay">
+                    <img src="/media/ovo.png" alt="OVO">
+                    <img src="/media/dana.png" alt="DANA">
+                    <img src="/media/shopeepay.png" alt="ShopeePay">
                 </div>
-                <p>One or more of the items in your cart is a recurring or deferred purchase. By continuing, I agree to
-                    the cancellation policy and authorize you to charge my payment method at the prices, frequency and
-                    dates listed on this page until my order is fulfilled or I cancel, if permitted.</p>
+                <p>Dengan melanjutkan pembelian, saya menyetujui syarat dan ketentuan pembelian emas serta kebijakan pengembalian. Saya juga mengotorisasi pembayaran sesuai dengan harga dan ketentuan yang tercantum.</p>
             </fieldset>
+
             <fieldset id="field-dua">
-                <legend>OR</legend>
+                <legend>ATAU</legend>
                 <div class="email">
-                    <h3>kontak</h3>
-                    <input type="email" name="email" placeholder="Email">
+                    <h3><i class='bx bxs-envelope'></i> Kontak</h3>
+                    <input type="email" name="email" placeholder="Email untuk konfirmasi pesanan" required>
+                    <div class="contact-options">
+                        <label>
+                            <input type="checkbox" checked> Kirim update pesanan via email
+                        </label>
+                        <label>
+                            <input type="checkbox"> Kirim penawaran khusus
+                        </label>
+                    </div>
                 </div>
+
                 <div class="alamat">
-                    <h3>ALAMAT PENGIRIMAN</h3>
+                    <h3><i class='bx bxs-map'></i> ALAMAT PENGIRIMAN</h3>
+                    <div class="shipping-notice">
+                        <i class='bx bxs-info-circle'></i>
+                        <p>Untuk keamanan, pengiriman emas menggunakan asuransi dan kurir khusus</p>
+                    </div>
                     <form id="from" action="">
-                        <select id="kota" name="fruits">
-                            <option value="" disabled selected>Pilih opsi...</option>
-                            <option value="medan">medan</option>
-                            <option value="sibolga">sibolga</option>
-                            <option value="korea selatan">bandung</option>
+                        <select id="kota" name="kota" required>
+                            <option value="" disabled selected>Pilih Kota...</option>
+                            <option value="jakarta">Jakarta</option>
+                            <option value="surabaya">Surabaya</option>
+                            <option value="bandung">Bandung</option>
+                            <option value="medan">Medan</option>
+                            <option value="semarang">Semarang</option>
+                            <option value="makassar">Makassar</option>
+                            <option value="palembang">Palembang</option>
+                            <option value="yogyakarta">Yogyakarta</option>
                         </select>
+                        
                         <div class="untuk-nama">
-                            <input type="username" id="name-depan" placeholder="Nama depan">
-                            <input type="username" id="nama-belakang" placeholder="Nama belakang">
+                            <input type="text" id="name-depan" placeholder="Nama depan *" required>
+                            <input type="text" id="nama-belakang" placeholder="Nama belakang *" required>
                         </div>
-                        <input type="text" placeholder="apartemen(opsional)">
+                        
+                        <input type="text" placeholder="Nama perusahaan (opsional)">
+                        
                         <div class="kot-prov">
-                            <input type="text" placeholder="alamat" id="alamat">
-                            <select name="provinsi" id="provinsi">
-                                <option value="">sumatera utara</option>
-                                <option value="">jawa barat</option>
-                                <option value="">sumatera barat</option>
+                            <input type="text" placeholder="Alamat lengkap *" id="alamat" required>
+                            <select name="provinsi" id="provinsi" required>
+                                <option value="" disabled selected>Pilih Provinsi...</option>
+                                <option value="dki-jakarta">DKI Jakarta</option>
+                                <option value="jawa-barat">Jawa Barat</option>
+                                <option value="jawa-tengah">Jawa Tengah</option>
+                                <option value="jawa-timur">Jawa Timur</option>
+                                <option value="sumatera-utara">Sumatera Utara</option>
+                                <option value="sumatera-selatan">Sumatera Selatan</option>
+                                <option value="sulawesi-selatan">Sulawesi Selatan</option>
+                                <option value="yogyakarta">DI Yogyakarta</option>
                             </select>
-                            <input type="text" placeholder="Kode pos" pattern="\d{5}">
+                            <input type="text" placeholder="Kode pos *" pattern="\d{5}" required>
                         </div>
-                        <input type="tel" id="phone" name="phone" placeholder="Telepon (opsional)"
-                            pattern="\+?\d{1,4}?[-.\s]?(?:\d{1,4}[-.\s]?){1,3}\d{1,9}">
+                        
+                        <input type="tel" id="phone" name="phone" placeholder="Nomor telepon *" 
+                               pattern="[0-9]{10,13}" required>
+                        
+                        <div class="additional-info">
+                            <label>
+                                <input type="checkbox" id="save-address"> Simpan alamat untuk pembelian selanjutnya
+                            </label>
+                        </div>
                     </form>
-                    <button class="end">Lanjut Pengiriman</button>
+                    
+                    <div class="shipping-options">
+                        <h4><i class='bx bxs-truck'></i> Pilih Metode Pengiriman</h4>
+                        <div class="shipping-option">
+                            <label>
+                                <input type="radio" name="shipping" value="express" checked>
+                                <span class="shipping-details">
+                                    <strong>Express Secure (1-2 hari)</strong>
+                                    <small>Asuransi penuh + tracking real-time</small>
+                                    <span class="price">Rp 50.000</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="shipping-option">
+                            <label>
+                                <input type="radio" name="shipping" value="standard">
+                                <span class="shipping-details">
+                                    <strong>Standard Secure (3-5 hari)</strong>
+                                    <small>Asuransi penuh + tracking</small>
+                                    <span class="price">Rp 25.000</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="shipping-option">
+                            <label>
+                                <input type="radio" name="shipping" value="pickup">
+                                <span class="shipping-details">
+                                    <strong>Ambil di Toko</strong>
+                                    <small>Gratis - Siap dalam 2 jam</small>
+                                    <span class="price">Gratis</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button class="end">
+                        <i class='bx bxs-credit-card'></i>
+                        Lanjut ke Pembayaran
+                    </button>
                 </div>
             </fieldset>
         </aside>
-        <aside id="kiri">
-            <div class="barang-barang">
 
+        <aside id="kiri">
+            <div class="order-summary">
+                <h3><i class='bx bxs-cart'></i> Ringkasan Pesanan</h3>
+                <div class="barang-barang">
+                    <div class="item-checkout">
+                        <img src="/media/cincin-emas-solitaire.jpg" alt="Cincin Emas Solitaire">
+                        <div class="item-details">
+                            <h4>Cincin Emas Solitaire Premium</h4>
+                            <p>18K - 3.2 gram - Size 7</p>
+                            <p>Dengan ukiran "Forever"</p>
+                            <div class="quantity">Qty: 1</div>
+                        </div>
+                        <div class="item-price">Rp 3.000.000</div>
+                    </div>
+                </div>
+                
+                <div class="price-breakdown">
+                    <div class="price-row">
+                        <span>Subtotal:</span>
+                        <span>Rp 3.000.000</span>
+                    </div>
+                    <div class="price-row">
+                        <span>Biaya Ukiran:</span>
+                        <span>Rp 150.000</span>
+                    </div>
+                    <div class="price-row">
+                        <span>Pengiriman:</span>
+                        <span>Rp 50.000</span>
+                    </div>
+                    <div class="price-row">
+                        <span>Asuransi:</span>
+                        <span>Termasuk</span>
+                    </div>
+                    <div class="price-row total">
+                        <span><strong>Total:</strong></span>
+                        <span><strong>Rp 3.200.000</strong></span>
+                    </div>
+                </div>
+                
+                <div class="guarantees">
+                    <div class="guarantee-item">
+                        <i class='bx bxs-shield-check'></i>
+                        <span>Garansi keaslian seumur hidup</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class='bx bxs-medal'></i>
+                        <span>Sertifikat resmi disertakan</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class='bx bxs-time'></i>
+                        <span>Kebijakan pengembalian 7 hari</span>
+                    </div>
+                </div>
+                
+                <div class="payment-methods">
+                    <h4>Metode Pembayaran Tersedia:</h4>
+                    <div class="payment-icons">
+                        <img src="/media/bca.png" alt="BCA">
+                        <img src="/media/mandiri.png" alt="Mandiri">
+                        <img src="/media/bni.png" alt="BNI">
+                        <img src="/media/bri.png" alt="BRI">
+                        <img src="/media/visa.png" alt="Visa">
+                        <img src="/media/mastercard.png" alt="Mastercard">
+                    </div>
+                </div>
             </div>
         </aside>
     </main>
-    <script src="/JS/transaksi.js"></script>
     
+    <script src="/JS/transaksi.js"></script>
+    <script src="/JS/checkout-gold.js"></script>
 </body>
 
 </html>
